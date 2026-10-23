@@ -75,7 +75,7 @@ const questions = [
             "Mee💗",
             "____"
         ],
-        answer: "Teacher or professor"
+        answer: "Mee💗"
     }
 ];
 
