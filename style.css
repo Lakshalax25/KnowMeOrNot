@@ -1,0 +1,143 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #c2a2ff, #a1c4fd);
+    color: #54245e;
+}
+
+.container {
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    border: 4px solid white;
+    border-radius: 28px;
+    box-shadow: 0 12px 35px #8e44ad40;
+}
+
+h1 {
+    color: #e84393;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #8e44ad;
+    margin: 15px 0;
+}
+
+h3 {
+    font-size: 23px;
+    margin: 25px 0;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin: 20px 0;
+    border: 2px solid #dda0dd;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+button {
+    background: linear-gradient(45deg, #ff4d8d, #a855f7);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 14px 22px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.option {
+    display: block;
+    width: 100%;
+    margin: 12px 0;
+    padding: 15px;
+    background: #fff0f6;
+    color: #54245e;
+    border: 2px solid #e8b8ff;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.option:hover:not(:disabled) {
+    background: #f3d5ff;
+    border-color: #d946ef;
+}
+
+.option:disabled {
+    cursor: default;
+}
+
+.correct {
+    background: #d4edda !important;
+    border-color: #28a745 !important;
+}
+
+.wrong {
+    background: #f8d7da !important;
+    border-color: #dc3545 !important;
+}
+
+#progress-bar {
+    height: 12px;
+    background: #eadcf8;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+#progress {
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #ff69b4, #8e44ad);
+    transition: width 0.3s;
+}
+
+.review-item {
+    background: #fff0f6;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 12px 0;
+    text-align: left;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 10px auto;
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}

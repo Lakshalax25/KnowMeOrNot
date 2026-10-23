@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KnowMeOrNot 💗</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <section id="welcome">
+            <h1>💖 KnowMeOrNot 💖</h1>
+            <p>How well do you really know me?</p>
+            <p>Let's test our friendship! ✨</p>
+
+            <input type="text" id="friendName"
+                   placeholder="Enter your name 😊">
+
+            <button onclick="startQuiz()">Start Quiz 💕</button>
+        </section>
+
+        <section id="quiz" class="hidden">
+            <h2 id="questionNumber"></h2>
+            <div id="progress-bar">
+                <div id="progress"></div>
+            </div>
+            <h3 id="questionText"></h3>
+            <div id="options"></div>
+            <p id="feedback"></p>
+            <button id="nextButton" onclick="nextQuestion()" class="hidden">
+                Next Question ➡️
+            </button>
+        </section>
+
+        <section id="result" class="hidden">
+            <h1>🎉 Quiz Completed! 🎉</h1>
+            <h2 id="resultGreeting"></h2>
+            <h2 id="scoreText"></h2>
+            <p id="resultMessage"></p>
+            <div id="answerReview"></div>
+            <button onclick="restartQuiz()">Play Again 💗</button>
+        </section>
+    </div>
+
+        <footer>Made with 💗 for my love</footer>
+  </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
